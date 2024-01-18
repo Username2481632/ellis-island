@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ellis Island Entry Simulation</title>
+  <link rel="icon" type="image/x-icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="title"><a href="story.html">You are an immigrant traveling to Ellis Island in 1920. You are traveling alone. Pick your stats,
+    then click the Check button to see if you are admitted, and click this text for more details about your story.</a></h1>
+  <div id="categories">
+    <h2>Class</h2>
+    <select id="classDropdown">
+      <option value="first">First</option>
+      <option value="second">Second</option>
+      <option value="third">Third</option>
+    </select>
+
+    <h2>Physical Health</h2>
+    <select id="physical_healthDropdown">
+      <option value="good">Perfectly Healthy, No Diseases</option>
+      <option value="medium">Healthy, but cough during inspection.</option>
+      <option value="bad">Have Trachoma</option>
+    </select>
+
+    <h2>Mental Health</h2>
+    <select id="mental_healthDropdown">
+      <option value="good">Perfectly Healthy</option>
+      <option value="medium">Not insane, but pretty dumb</option>
+      <option value="bad">Insane</option>
+    </select>
+
+    <h2>Employment Status</h2>
+    <select id="employmentDropdown">
+      <option value="good">No Job</option>
+      <option value="bad">Have a job offer in the United States</option>
+    </select>
+    <h2>Literacy</h2>
+    <select id="literacyDropdown">
+      <option value="good">Literate in English</option>
+      <option value="medium">Literate but not in English</option>
+      <option value="bad">Completely Illiterate</option>
+    </select>
+  </div>
+  <br>
+  <hr>
+  <button id="checkButton">Check</button>
+  <span id="status"></span>
+  <p id="response">Click "Check" to be evaluated.</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <p class="disclaimer">Disclaimer: Keep in mind that many more factors went into deciding whether an immigrant would be
+    admitted than those on this webpage, including possibly a bit of luck.</p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
